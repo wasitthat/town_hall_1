@@ -1,0 +1,204 @@
+/* the styles for the elements */
+
+html{
+    background-color: white;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto 0 auto;
+    border-width: 3px;
+
+}
+body, header{
+    border-style: solid;
+    border-color: #931420;
+    background-color: #fffded;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+figcaption{
+    display: block;
+    clear: right;
+    border-bottom: 2px solid #800000;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+figure{
+    float: right;
+    margin-right: 1.5em;
+}
+header{
+    padding: 1.5em 0 2em 0;
+    border-width: 0 0 3px 0;
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header img {
+	float: left;
+	margin-left: 1em;
+	padding: 0 30px 0 30px;
+}
+header h2{
+    font-size: 170%;
+    color: #800000;
+}
+header h3{
+    font-size:130%;
+}
+header h3 em.shadow{
+    text-shadow: 2px 5px 5px #800000;
+}
+
+
+main {
+	clear: left;
+}
+
+#nav_menu{
+    position: relative;
+}
+#nav_menu ul li a.current{
+    color: yellow;
+}
+#nav_menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#nav_menu ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul li ul{
+    float: none;
+}
+#nav_menu ul li:hover > ul{
+    display: block;
+}
+#nav_menu ul li{
+    float: left;
+}
+#nav_menu > ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+#nav_menu ul li a{
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+
+
+section{
+    width: 525px;
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+section h2{
+    font-size: 130%;
+    color: #800000;
+    margin: 15px auto;
+}
+section h3{
+    font-size: 105%;
+    padding-bottom .25em;
+}
+section blockquote{
+    font-style: italic;
+    padding: 1em 2em 0 2em;
+}
+section ul {
+    padding: 0 .25em 0 1.25em;
+}
+section li{
+    padding-bottom: .35em;
+}
+article h1{
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
+}
+.end{
+    margin: 10px auto;
+
+}
+article h2{
+    padding-top: 0;
+}
+article h3{
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+article img{
+    float: right;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    margin-bottom: .5em;
+}
+
+article p{
+    color: black;
+    padding-bottom: 1em;
+}
+section article p a{
+}
+picture{
+
+}
+
+aside{
+    width: 215;
+    float: left;
+    padding-botton: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+aside h2{
+    font-size: 130%;
+    color: #800000;
+    padding-bottom: 15px;
+}
+aside h3{
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+aside img{
+    padding-bottom: 1em;
+
+}
+aside a:focus, a:hover{
+    font-style: italic;
+}
+
+
+
+
+footer{
+    background-color: #931420;
+    clear: both;
+}
+footer p{
+    text-align: center;
+    color: #ffffff;
+    padding: 1em 0;
+}
+
+/* the styles for the footer */
