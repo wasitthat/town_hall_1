@@ -17,6 +17,10 @@ def index():
 def basic():
     return render_template('basic.html')
 
+@app.route('/tickets')
+def tickets():
+    return render_template('tickets.html')
+
 
 @app.route('/toobin')
 def toobin():
