@@ -44,5 +44,9 @@ def sorkin():
 @app.route('/luncheons')
 def luncheons():
     return render_template('luncheons.html')
+
+@app.route('/register')
+def register():
+    return render_template('register_account.html')
 if __name__ == "__main__":
     app.run(debug=True)
