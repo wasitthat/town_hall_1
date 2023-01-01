@@ -17,7 +17,6 @@ body, header{
     border-color: #931420;
     background-color: #fffded;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -44,8 +43,13 @@ header img {
 	margin-left: 1em;
 	padding: 0 30px 0 30px;
 }
+@font-face {
+    font-family:"Blackadder ITC Regular";
+    src: url("fonts/ITCBLKAD.TTF") format("truetype");
+}
 header h2{
-    font-size: 170%;
+    font-family: "Blackadder ITC Regular";
+    font-size: 270%;
     color: #800000;
 }
 header h3{
@@ -158,16 +162,11 @@ article p{
     color: black;
     padding-bottom: 1em;
 }
-section article p a{
-}
-picture{
-
-}
 
 aside{
-    width: 215;
+    width: 215px;
     float: left;
-    padding-botton: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-top: 10px;
 }
@@ -186,6 +185,7 @@ aside img{
 }
 aside a:focus, a:hover{
     font-style: italic;
+    font-size:
 }
 
 
@@ -199,6 +199,49 @@ footer p{
     text-align: center;
     color: #ffffff;
     padding: 1em 0;
+}
+
+@media print{
+    body{
+        @font-face{
+            font-family: Times New Roman, Times, serif;
+        }
+        width: auto;
+        background: white;
+        border: none;
+    }
+    video, #nav_menu, aside h2:first-of-type{
+        display: none;
+    }
+    aside h2{
+        font-size:100%;
+    }
+    footer p, article p{
+        font-size: 87.5%;
+    }
+    aside a{
+        text-decoration: none;
+    }
+    footer p{
+        padding-top: .75em;
+        border: 3px solid #931420;
+    }
+    section{
+        width:5in;
+        padding-right: 0;
+        position: relative;
+        left: -25%;
+    }
+    aside{
+        width: 2in;
+    }
+
+    main{
+
+    }
+    footer{
+
+    }
 }
 
 /* the styles for the footer */
