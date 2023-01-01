@@ -6,12 +6,10 @@ app = Flask(__name__)
 def sample():
     return render_template('02_box_model.html')
 
-
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('index.html')
-
 
 @app.route('/basic')
 def basic():
@@ -21,21 +19,17 @@ def basic():
 def tickets():
     return render_template('tickets.html')
 
-
 @app.route('/toobin')
 def toobin():
     return render_template('toobin.html')
-
 
 @app.route('/sampson')
 def sampson():
     return render_template('sampson.html')
 
-
 @app.route('/chua')
 def chua():
     return render_template('chua.html')
-
 
 @app.route('/sorkin')
 def sorkin():
@@ -48,5 +42,25 @@ def luncheons():
 @app.route('/register')
 def register():
     return render_template('register_account.html')
+
+@app.route("/history")
+def history():
+    return render_template("history.html")
+
+@app.route("/directors")
+def directors():
+    return render_template("directors.html")
+
+@app.route("/past")
+def past():
+    return render_template("past.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
