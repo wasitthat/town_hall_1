@@ -59,7 +59,9 @@ def past():
 def contact():
     return render_template("contact.html")
 
-
+@app.route("/aboutus")
+def aboutus():
+    return render_template("aboutus.html")
 
 
 if __name__ == "__main__":
