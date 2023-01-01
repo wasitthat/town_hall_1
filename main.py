@@ -11,9 +11,9 @@ def sample():
 def index():
     return render_template('index.html')
 
-@app.route('/basic')
-def basic():
-    return render_template('basic.html')
+@app.route('/speakers')
+def speakers():
+    return render_template('speakers.html')
 
 @app.route('/tickets')
 def tickets():
