@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/normalize.css">
     <link rel="stylesheet" href="static/slicknav.css">
     <link rel="stylesheet" href="static/speaker.css">
+    <script src="static/js/printPage.js"></script>
 </head>
 
 <body>
@@ -36,8 +37,9 @@
     <section>
         <h1>Fossil Threads in the Web of Life</h1>
         <article>
-            <video id="videoplayer" src="static/sampson.mp4" controls
-		       width="480" height="270" poster="static/sampson_poster.png"></video>
+            <!--<video id="videoplayer" src="static/sampson.mp4" controls
+		       width="480" height="270" poster="static/sampson_poster.png"></video>-->
+            <img src="static/sampson_dinosaur.jpg" alt="">
             <h2>February</h2>
             <h2>Scott Sampson</h2>
             <p>
@@ -72,6 +74,7 @@
         </article>
     </section>
     <aside>
+        <button id="printButton">Print Page</button>
         <h2>Guest Speakers</h2>
         <div>
             <h4><b>October</b></h4>
@@ -102,7 +105,11 @@
 </main>
 <footer>
     <p>
-        &copy 2018, San Joaquin Valley Town Hall, Fresno CA 93755
+        <script>
+            var today = new Date();
+            document.write("&copy;&nbsp;");
+            document.write(today.getFullYear());
+        </script>, San Joaquin Valley Town Hall, Fresno CA 93755
     </p>
 </footer>
 </body>

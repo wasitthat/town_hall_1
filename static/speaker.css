@@ -127,11 +127,14 @@ section blockquote{
     font-style: italic;
     padding: 1em 2em 0 2em;
 }
-section ul {
-    padding: 0 .25em 0 1.25em;
+section h2{
+    clear: both;
 }
-section li{
+section ul li{
+    list-style: none;
     padding-bottom: .35em;
+    float: left;
+    padding-right: 10px;
 }
 article h1{
     font-size: 150%;
@@ -232,11 +235,12 @@ footer p{
     aside{
         width: 2in;
     }
-
-    main{
-
+    #printButton{
+        display: none;
     }
-    footer{
-
-    }
+}
+#printButton{
+    width: auto;
+    padding: .5em;
+    margin: 1em 0 1em 0;
 }

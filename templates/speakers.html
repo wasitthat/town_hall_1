@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<meta charset="utf-8">
+<title>San Joaquin Valley Town Hall</title>
+<link rel="shortcut icon" href="static/favicon.ico">
+<link rel="stylesheet" type="text/css" href="static/normalize.css">
+<link rel="stylesheet" href="static/speaker.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="static/js/image_swap.js"></script>
 </head>
-<body>
 
+<body>
+	<header> <img src="static/town_hall_logo.gif" alt="Town Hall logo" height="80">
+    	<h2>San Joaquin Valley Town Hall</h2>
+    	<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+	</header>
+	<nav id="nav_menu">
+    	<ul>
+        	<li><a href="index">Home</a></li>
+        	<li><a href="speakers">Speakers</a></li>
+        	<li><a href="luncheons">Luncheons</a></li>
+        	<li><a href="tickets">Tickets</a></li>
+        	<li><a href="aboutus"> About Us</a>
+            	<ul>
+                	<li><a href="history">Our History</a></li>
+                	<li><a href="directors">Board of Directors</a></li>
+                	<li><a href="past">Past Speakers</a></li>
+                	<li><a href="contact">Contact Information</a></li>
+            	</ul>
+        	</li>
+    	</ul>
+    </nav>
+	<main>
+		<section>
+  			<h1>jQuery Image Swaps</h1>
+  			<ul id="image_list">
+    			<li><a href="static/toobin_court.jpg" title="Jeffrey Toobin">
+    				<img src="static/toobin75.jpg" alt=""></a></li>
+    			<li><a href="static/sorkin_desk260.jpg" title="Andrew Ross Sorkin">
+    				<img src="static/sorkin75.jpg" alt=""></a></li>
+    			<li><a href="static/chua_220.jpg" title="Amy Chua">
+    				<img src="static/chua75.jpg" alt=""></a></li>
+    			<li><a href="static/sampson_dinosaur.jpg" title="Scott Sampson">
+    				<img src="static/sampson75.jpg" alt=""></a></li>
+  			</ul>
+  			<h2>Jeffrey Toobin</h2>
+  			<p><img src="static/toobin_court.jpg" alt=""></p>
+		</section>
+	</main>
+	<footer>
+    <p>
+        <script>
+            var today = new Date();
+            document.write("&copy;&nbsp;");
+            document.write(today.getFullYear());
+        </script>, San Joaquin Valley Town Hall, Fresno CA 93755
+    </p>
+	</footer>
 </body>
 </html>

@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="static/js/jquery.slicknav.min.js"></script>
     <link rel="stylesheet" href="static/slicknav.css">
+
     <script type="text/javascript">
         $(document).ready(function(){
             $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
@@ -76,8 +77,6 @@
     </section>
     <aside>
         <h2>Guest Speakers</h2>
-
-
         <div>
             <div>
                 <h4>October<br><a href="toobin">Jeffrey Toobin</a></h4>
@@ -100,7 +99,11 @@
 </main>
 <footer>
     <p>
-        &copy 2018, San Joaquin Valley Town Hall, Fresno CA 93755
+        <script>
+            var today = new Date();
+            document.write("&copy;&nbsp;");
+            document.write(today.getFullYear());
+        </script>, San Joaquin Valley Town Hall, Fresno CA 93755
     </p>
 </footer>
 </body>
